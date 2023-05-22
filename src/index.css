@@ -11,6 +11,10 @@ body {
   font-size: 35px;
 }
 
+.logo {
+  font-family: "Lucida Handwriting", "Brush Script MT","Cursive";
+}
+
 header {
   display: flex;
   flex-direction: row;
