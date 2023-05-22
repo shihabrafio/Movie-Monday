@@ -50,3 +50,29 @@ footer {
   margin-left: 30px;
 }
 
+.card-container {
+  display: flex;
+  width: 100%;
+  padding: 0 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  padding: 0.5em 0.5em;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.card-img {
+  width: 300px;
+  height: 300px;
+  background: white;
+}
+
+.description {
+  justify-content: space-between;
+  padding: 0.6em 1em;
+}
