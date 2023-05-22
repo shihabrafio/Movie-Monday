@@ -12,7 +12,7 @@ body {
 }
 
 .logo {
-  font-family: "Lucida Handwriting", "Brush Script MT","Cursive";
+  font-family: "Lucida Handwriting", sans-serif;
 }
 
 header {
@@ -22,8 +22,6 @@ header {
   gap: 3.5rem;
   height: 5rem;
   font-weight: 700;
-  justify-content: center;
-  align-items: center;
   padding: 10px 15px;
   letter-spacing: 0.01em;
 }
@@ -53,4 +51,3 @@ footer {
   letter-spacing: 00.2em;
   margin-left: 30px;
 }
-
