@@ -10,7 +10,7 @@ const card = (movies) => {
           </div>         
         </div>
         <div class="span"> <span> 2 Likes</span> </div>
-        <button id="comments">Comments</button>
+        <button class="comments">Comments</button>
         `;
 
     card.innerHTML += displayCard;

@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
 * {
   color: red;
   margin: 0.1em;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
-  background: black;
 }
 
 body {
@@ -110,4 +109,28 @@ button {
   border: none;
   font-family: inherit;
   width: 100%;
+}
+
+#popup-window {
+  background-color: #130808;
+}
+
+.popup-image,
+.des {
+  text-align: center;
+}
+
+#table-body {
+  padding: 0;
+}
+
+#submit-button {
+  width: 15%;
+  border-radius: 12px;
+}
+
+#username,
+#insights {
+  width: 24%;
+  border-radius: 10px;
 }

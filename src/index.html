@@ -18,6 +18,55 @@
           </li>
         </ul>
       </header>
+      <section class="popup-section">
+        <div id="popup-wrapper">
+          <div id="popup-window">
+            <span id="close-button">
+              <img src="../images/close.png" alt="">
+            </span>
+            <div class="popup-image">
+              <img class="movie-image" src="dummy" />
+            </div>
+            <div class="des">
+              <h3 class="movie-name"></h3>
+              <p class="summary"></p>
+              <h4>Comments</h4>
+              <span id="comment-counter">(2)</span>
+              <div id="comments-wrapper">
+                <ul id="table-body">
+                  <li>asd</li>
+                  <tr>
+                    <td>date</td>
+                    <td>name</td>
+                    <td>textarea</td>
+                  </tr>
+                </ul>
+              </div>
+              <form id="comment-form">
+                <div>
+                  <input
+                    id="username"
+                    type="text"
+                    placeholder="Your name"
+                    maxlength="30"
+                    required
+                  />
+                </div>
+                <div>
+                  <textarea
+                    id="insights"
+                    name="comment"
+                    placeholder="Your insight"
+                    maxlength="80"
+                    required
+                  ></textarea>
+                </div>
+                <button id="submit-button" type="submit">Comment</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
       <section>
         <div class="card-container" id="movies"></div>
       </section>
