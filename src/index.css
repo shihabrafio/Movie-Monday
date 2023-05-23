@@ -1,0 +1,53 @@
+* {
+  color: red;
+  margin: 0.1em;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background: black;
+}
+
+body {
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.logo {
+  font-family: "Lucida Handwriting", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3.5rem;
+  height: 5rem;
+  font-weight: 700;
+  padding: 10px 15px;
+  letter-spacing: 0.01em;
+}
+
+header div i {
+  font-size: 36px;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+header li {
+  display: flex;
+  gap: 55px;
+}
+
+footer {
+  border: 3px solid red;
+  text-align: center;
+  width: 95%;
+  bottom: 0;
+  font-size: 15px;
+  padding-block: 15px;
+  letter-spacing: 00.2em;
+  margin-left: 30px;
+}
