@@ -25,7 +25,6 @@ header {
   height: 5rem;
   font-weight: 700;
   align-items: center;
-
   padding: 10px 15px;
   letter-spacing: 0.01em;
 }
@@ -55,7 +54,6 @@ footer {
   letter-spacing: 00.2em;
   margin-left: 30px;
 }
-
 
 .card-container {
   display: flex;
@@ -113,4 +111,3 @@ button {
   font-family: inherit;
   width: 100%;
 }
-
