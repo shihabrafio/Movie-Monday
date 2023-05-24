@@ -1,6 +1,6 @@
 const modal = (data, index) => {
-    const container = document.querySelector('.content');
-    container.innerHTML = `
+  const container = document.querySelector('.content');
+  container.innerHTML = `
       <div class="modal-details">
       <img src="${data[index].image.original}" class="modal-img" />
         <h2 class="heading">${data[index].name}</h2>
@@ -28,5 +28,5 @@ const modal = (data, index) => {
         </form>
         <i class='bx bx-x'></i>
       </div>`;
-  };
-  export default modal;
+};
+export default modal;
