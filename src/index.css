@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   background: black;
+  text-decoration-line: none;
 }
 
 body {
@@ -183,12 +184,14 @@ button {
   justify-content: center;
   font-size: 0.7rem;
   margin-bottom: 0.7rem;
-  margin-left: 11%;
+  margin-left: 15%;
 }
 
 .comment-msg {
   width: 60%;
   color: wheat;
+  text-align: left;
+  padding-left: 4%;
 }
 
 .comment-date {

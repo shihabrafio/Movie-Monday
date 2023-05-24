@@ -18,12 +18,12 @@ const card = (movies) => {
   });
   const popUp = document.querySelectorAll('#comments');
   popUp.forEach((pop) => {
-    pop.addEventListener('click', (e) => {
+    pop.addEventListener('click',async (e) => {
       const modals = document.querySelector('.modal');
       const contents = document.querySelector('.content');
       modals.classList.remove('hidden');
       contents.classList.add('active');
-      modal(movies, e.target.dataset.id);
+      await modal(movies, e.target.dataset.id);
       const closeBtn = document.querySelector('.bx-x');
       closeBtn.addEventListener('click', () => {
         modals.classList.add('hidden');
