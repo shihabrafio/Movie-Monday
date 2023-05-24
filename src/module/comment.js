@@ -1,4 +1,4 @@
-import { commenturl } from "./url.js";
+import { commenturl } from './url.js';
 
 const postComment = async (data) => {
   await fetch(commenturl, {

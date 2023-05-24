@@ -18,7 +18,7 @@ const card = (movies) => {
   });
   const popUp = document.querySelectorAll('#comments');
   popUp.forEach((pop) => {
-    pop.addEventListener('click',async (e) => {
+    pop.addEventListener('click', async (e) => {
       const modals = document.querySelector('.modal');
       const contents = document.querySelector('.content');
       modals.classList.remove('hidden');
