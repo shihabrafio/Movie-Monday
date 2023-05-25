@@ -1,4 +1,5 @@
 import { allShows } from '../module/itemCounter.js';
+
 global.fetch = jest.fn(() => Promise.resolve({
   json: () => Promise.resolve(
     [
