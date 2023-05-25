@@ -1,21 +1,28 @@
+// eslint-disable-next-line import/no-cycle
+import { requestLikes } from './getData.js';
 import modal from './modal.js';
+import { likeurl } from './url.js';
 
-const card = (movies) => {
+const card = (movies, data) => {
   const card = document.querySelector('.card-container');
+  card.innerHTML = '';
   movies.forEach((movie, index) => {
+    const id = data.findIndex((like) => +like.item_id === index);
+    const msgLikes = id >= 0 ? data[id].likes : 0;
     const displayCard = `<div class="card" id="card">
         <img src="${movie.image.original}" class="card-img" alt="Show name"/>
         <div class="description">
           <span class="details">${movie.name}</span>
           <div class="likes">
-          <i class="bx bx-heart"></i> 
+          <i class="bx bx-heart" data-id="${index}"></i> 
           </div>         
         </div>
-        <div class="span"> <span> 2 Likes</span> </div>
+        <div class="span"> <span> ${msgLikes}  Likes</span> </div>
         <button id="comments" data-id="${index}">Comments</button>
         `;
     card.innerHTML += displayCard;
   });
+
   const popUp = document.querySelectorAll('#comments');
   popUp.forEach((pop) => {
     pop.addEventListener('click', async (e) => {
@@ -29,6 +36,16 @@ const card = (movies) => {
         modals.classList.add('hidden');
         contents.classList.remove('active');
       });
+    });
+  });
+
+  const likeBtn = document.querySelectorAll('.bx-heart');
+  const url = likeurl;
+  likeBtn.forEach((like) => {
+    like.addEventListener('click', (e) => {
+      requestLikes(url, e.target.dataset.id);
+      like.classList.remove('bx-heart');
+      like.classList.add('bxs-heart');
     });
   });
 };

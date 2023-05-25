@@ -1,4 +1,4 @@
 import './index.css';
-import shows from './module/getData.js';
+import { shows } from './module/getData.js';
 
 shows();

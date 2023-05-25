@@ -1,11 +1,30 @@
+// eslint-disable-next-line import/no-cycle
 import card from './card.js';
-import { cardapi } from './url.js';
+import { cardapi, likeurl } from './url.js';
 
 const shows = async () => {
   const response = await fetch(cardapi);
   const data = await response.json();
   const result = data.slice(40, 60);
-  card(result);
+
+  const likes = await fetch(likeurl);
+  const res = await likes.json();
+  card(result, res);
 };
 
-export default shows;
+const requestLikes = async (url, id) => {
+  await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      item_id: id,
+    }),
+  });
+  shows();
+};
+
+requestLikes();
+
+export { shows, requestLikes };
