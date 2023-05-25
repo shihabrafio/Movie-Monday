@@ -11,4 +11,19 @@ const shows = async () => {
   card(result, res);
 };
 
-export default shows;
+const requestLikes = async (url, id) => {
+  await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      item_id: id,
+    }),
+  });
+  shows();
+};
+
+requestLikes();
+
+export { shows, requestLikes };
