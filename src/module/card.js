@@ -1,6 +1,6 @@
 import modal from './modal.js';
 import { likeurl } from './url.js';
-import { requestLikes } from './getData.js';
+import requestLikes from './lrequesLike.js';
 
 const card = (movies, data) => {
   const card = document.querySelector('.card-container');
@@ -16,7 +16,7 @@ const card = (movies, data) => {
           <i class="bx bx-heart" data-id="${index}"></i> 
           </div>         
         </div>
-        <div class="span"> <span> ${msgLikes} Likes</span> </div>
+        <div class="span"> <span> ${msgLikes}  Likes</span> </div>
         <button id="comments" data-id="${index}">Comments</button>
         `;
     card.innerHTML += displayCard;
