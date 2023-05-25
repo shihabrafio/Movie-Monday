@@ -1,8 +1,13 @@
 import modal from './modal.js';
+import { likeurl } from './url.js';
+import { requestLikes } from './getData.js';
 
 const card = (movies) => {
   const card = document.querySelector('.card-container');
+  card.innerHTML = '';
   movies.forEach((movie, index) => {
+    const id = data.findIndex((like) => +like.item_id === index);
+    const msgLikes = id >= 0 ? data[id].likes : 0;
     const displayCard = `<div class="card" id="card">
         <img src="${movie.image.original}" class="card-img" alt="Show name"/>
         <div class="description">
@@ -11,11 +16,12 @@ const card = (movies) => {
           <i class="bx bx-heart"></i> 
           </div>         
         </div>
-        <div class="span"> <span> 2 Likes</span> </div>
+        <div class="span"> <span ${msgLikes}>  Likes</span> </div>
         <button id="comments" data-id="${index}">Comments</button>
         `;
     card.innerHTML += displayCard;
   });
+  
   const popUp = document.querySelectorAll('#comments');
   popUp.forEach((pop) => {
     pop.addEventListener('click', async (e) => {
@@ -29,6 +35,16 @@ const card = (movies) => {
         modals.classList.add('hidden');
         contents.classList.remove('active');
       });
+    });
+  });
+
+  const likeBtn = document.querySelectorAll('.bx-heart');
+  const url = likeurl;
+  likeBtn.forEach((like) => {
+    like.addEventListener('click', (e) => {
+      requestLikes(url, e.target.dataset.id);
+      like.classList.remove('bx-heart');
+      like.classList.add('bxs-heart');
     });
   });
 };
