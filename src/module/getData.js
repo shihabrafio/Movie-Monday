@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-cycle
 import card from './card.js';
 import { cardapi, likeurl } from './url.js';
 

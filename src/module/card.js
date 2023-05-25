@@ -1,6 +1,7 @@
+// eslint-disable-next-line import/no-cycle
+import { requestLikes } from './getData.js';
 import modal from './modal.js';
 import { likeurl } from './url.js';
-import { requestLikes } from './getData.js';
 
 const card = (movies, data) => {
   const card = document.querySelector('.card-container');
