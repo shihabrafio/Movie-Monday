@@ -95,6 +95,14 @@ To run the project, use Visual Studio Code Liver Server:
 - Twitter: [@shihab_uddin19](https://twitter.com/shihab_uddin19)
 - LinkedIn: [Shihab Uddin Khan](https://www.linkedin.com/in/shihab-uddin-khan-45620a16a/)
 
+👤 *Denio Nhanale*
+- GitHub: [@githubhandle](https://github.com/deniodev)
+- Twitter: [@twitterhandle](https://twitter.com/DNhanale)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/denionhanale)
+
+
+
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [User send and receive friend requests]
