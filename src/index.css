@@ -226,3 +226,7 @@ textarea {
   font-size: 1.4rem;
   margin: 0.7rem 0;
 }
+
+#count {
+  margin-left: -55px;
+}
