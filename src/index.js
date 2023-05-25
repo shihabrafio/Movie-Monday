@@ -6,13 +6,13 @@ import { shows } from './module/getData.js';
 // const onLoad = ((movie, index) => {
 //     const cardLayout = document.querySelector('.card-container');
 //     cardLayout.innerHTML = '';
-    
+
 //         card(movie, index);
 //        getLike();
 //     });
- 
+
 // //   onLoad();
-  
+
 //   document.querySelector('.card-container').addEventListener('click', (e) => {
 //     e.preventDefault();
 //     if (e.target.classList.contains('bx-heart')) {
@@ -21,6 +21,5 @@ import { shows } from './module/getData.js';
 //       onLoad();
 //     }
 //   });
-
 
 shows();

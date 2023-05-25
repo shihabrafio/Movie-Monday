@@ -2,7 +2,7 @@ import modal from './modal.js';
 import { likeurl } from './url.js';
 import { requestLikes } from './getData.js';
 
-const card = (movies) => {
+const card = (movies, data) => {
   const card = document.querySelector('.card-container');
   card.innerHTML = '';
   movies.forEach((movie, index) => {
@@ -13,15 +13,15 @@ const card = (movies) => {
         <div class="description">
           <span class="details">${movie.name}</span>
           <div class="likes">
-          <i class="bx bx-heart"></i> 
+          <i class="bx bx-heart" data-id="${index}"></i> 
           </div>         
         </div>
-        <div class="span"> <span ${msgLikes}>  Likes</span> </div>
+        <div class="span"> <span> ${msgLikes} Likes</span> </div>
         <button id="comments" data-id="${index}">Comments</button>
         `;
     card.innerHTML += displayCard;
   });
-  
+
   const popUp = document.querySelectorAll('#comments');
   popUp.forEach((pop) => {
     pop.addEventListener('click', async (e) => {

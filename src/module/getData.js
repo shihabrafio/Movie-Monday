@@ -1,13 +1,11 @@
 import card from './card.js';
-import { cardapi } from './url.js';
-import { likeurl } from './url.js';
-
+import { cardapi, likeurl } from './url.js';
 
 const shows = async () => {
   const response = await fetch(cardapi);
   const data = await response.json();
   const result = data.slice(40, 60);
-  
+
   const likes = await fetch(likeurl);
   const res = await likes.json();
   card(result, res);
@@ -15,7 +13,7 @@ const shows = async () => {
 
 const requestLikes = async (url, id) => {
   await fetch(url, {
-    method:'POST',
+    method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
@@ -28,9 +26,4 @@ const requestLikes = async (url, id) => {
 
 requestLikes();
 
-
-
-
-
-
-export  {shows, requestLikes};
+export { shows, requestLikes };
