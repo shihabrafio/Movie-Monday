@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="">Check out the live demo</a>
+- <a href="https://shihabrafio.github.io/Movie-Monday/">Check out the live demo</a>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
