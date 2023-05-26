@@ -25,4 +25,8 @@ describe('comment counter tests using Jest', () => {
     const response = await allcomment(3);
     expect(response.length).toBe(3);
   });
+  test('Wrong test Comment Count', async () => {
+    const response = await allcomment(3);
+    expect(response.length).not.toBe(1);
+  });
 });

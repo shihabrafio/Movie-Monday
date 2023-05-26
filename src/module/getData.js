@@ -2,6 +2,7 @@
 import card from './card.js';
 import { cardapi, likeurl } from './url.js';
 import { itemCount } from './itemCounter.js';
+
 const shows = async () => {
   const response = await fetch(cardapi);
   const data = await response.json();
