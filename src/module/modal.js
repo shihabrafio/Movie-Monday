@@ -32,7 +32,7 @@ const modal = async (data, index) => {
           <i class='bx bx-x'></i>
         </div>`;
   const form = document.querySelector('form');
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async(e) => {
     e.preventDefault();
     const name = document.querySelector('input').value;
     const commentMsg = document.querySelector('textarea').value;
@@ -43,13 +43,9 @@ const modal = async (data, index) => {
     };
     form.reset();
     if (commentData.username && commentData.comment) {
-      postComment(commentData);
-    }
-    getComments(index);
-    setTimeout(() => {
-      window.location.reload();
-    }, 1000);
+     await postComment(commentData);
+      getComments(index);
+    };
   });
 };
-
 export default modal;
