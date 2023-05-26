@@ -5,6 +5,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Presentation](#presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -59,6 +60,10 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - <a href="https://shihabrafio.github.io/Movie-Monday/">Check out the live demo</a>
+
+## 🚀 Presentation <a name="presentation"></a>
+
+- <a href="https://drive.google.com/file/d/1iPTBRkNIa2iV9eNqqHPA050MIDzOtzcs/view?usp=sharing">Check out the presentation</a>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
